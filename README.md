@@ -1,27 +1,36 @@
 # Coincrest
 
-A lightweight static web starter for Coincrest, a modern market and opportunity dashboard concept.
-
-## Overview
-
-This project is a simple front-end landing page built with plain HTML, CSS, and JavaScript so it can run instantly in any browser without a build step.
+A responsive React portfolio dashboard built with Vite. The interface uses illustrative crypto portfolio data and runs entirely in the browser; it does not connect to a wallet or live market feed.
 
 ## Run locally
 
-Open `index.html` directly in a browser, or serve it locally:
+Requires Node.js 18 or newer.
 
 ```bash
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Then visit `http://localhost:8000`.
+Open the local URL printed by Vite. To create and preview a production build:
 
-## Project structure
+```bash
+npm run build
+npm run preview
+```
 
-- `index.html` — landing page markup
-- `styles.css` — visual design and responsive layout
-- `app.js` — small front-end enhancement for dynamic footer year
+## Dashboard interactions
 
-## Notes
+- Switch chart time ranges (1D through ALL).
+- Filter holdings by asset category and search by name or ticker.
+- Sort holdings by allocation.
+- Responsive collapsible navigation on smaller screens.
+- Demo buttons provide in-app feedback; they do not submit trades or connect to financial services.
 
-This starter is intentionally minimal and ready to evolve into a larger app as the project grows.
+## Structure
+
+- `src/App.jsx` — dashboard layout, illustrative data, chart, filters, and interactions
+- `src/styles.css` — responsive dashboard styling
+- `src/main.jsx` — React entry point
+- `index.html` — Vite document shell
+
+All displayed portfolio values are mock data for UI demonstration only.

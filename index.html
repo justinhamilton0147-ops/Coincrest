@@ -1,172 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coincrest | Discover your next opportunity</title>
-    <meta
-      name="description"
-      content="Coincrest helps investors and enthusiasts discover promising opportunities with a modern, elegant dashboard."
-    />
+    <meta name="theme-color" content="#0b0d12" />
+    <meta name="description" content="Coincrest digital asset portfolio dashboard." />
+    <title>Coincrest — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
-          <span class="brand-mark">C</span>
-          <span>Coincrest</span>
-        </div>
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="#features">Features</a>
-          <a href="#insights">Insights</a>
-          <a href="#about">About</a>
-        </nav>
-        <button class="ghost-button">Launch app</button>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow">Built for smart decision-making</span>
-            <h1>Track opportunities with clarity.</h1>
-            <p>
-              Coincrest gives investors a clean, focused view of the market so they can
-              spot momentum, compare patterns, and act confidently.
-            </p>
-            <div class="cta-row">
-              <button class="primary-button">Get started</button>
-              <button class="secondary-button">View demo</button>
-            </div>
-            <ul class="stats" aria-label="Key statistics">
-              <li>
-                <strong>24/7</strong>
-                <span>Market updates</span>
-              </li>
-              <li>
-                <strong>12k+</strong>
-                <span>Signals tracked</span>
-              </li>
-              <li>
-                <strong>4.9/5</strong>
-                <span>User rating</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="hero-panel" aria-label="Market summary panel">
-            <div class="panel-header">
-              <div>
-                <span class="mini-label">Portfolio overview</span>
-                <h2>$284,900</h2>
-              </div>
-              <span class="trend positive">+12.4%</span>
-            </div>
-
-            <div class="chart" aria-hidden="true">
-              <span class="line line-a"></span>
-              <span class="line line-b"></span>
-            </div>
-
-            <div class="ticker-list">
-              <div class="ticker-item">
-                <span>BTC</span>
-                <strong>$67,420</strong>
-                <em class="positive">+3.8%</em>
-              </div>
-              <div class="ticker-item">
-                <span>ETH</span>
-                <strong>$3,520</strong>
-                <em class="positive">+2.1%</em>
-              </div>
-              <div class="ticker-item">
-                <span>SOL</span>
-                <strong>$148</strong>
-                <em class="negative">-0.7%</em>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="features" class="features">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Why Coincrest</span>
-            <h2>Built to simplify the complex.</h2>
-          </div>
-
-          <div class="feature-grid">
-            <article class="feature-card">
-              <div class="icon">◎</div>
-              <h3>Clear overview</h3>
-              <p>See the metrics that matter without getting buried in noise.</p>
-            </article>
-            <article class="feature-card">
-              <div class="icon">△</div>
-              <h3>Trend tracking</h3>
-              <p>Monitor momentum and compare performance across key assets.</p>
-            </article>
-            <article class="feature-card">
-              <div class="icon">✦</div>
-              <h3>Actionable insights</h3>
-              <p>Turn raw market data into confident, faster decisions.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="insights" class="insights">
-        <div class="container insights-grid">
-          <div class="insight-copy">
-            <span class="eyebrow">Data that feels useful</span>
-            <h2>Focus on momentum, risk, and opportunity.</h2>
-            <p>
-              Coincrest is designed for people who want a clean experience and a sharper view
-              of market movement—without the clutter of overloaded dashboards.
-            </p>
-          </div>
-
-          <div class="insight-card">
-            <div class="card-row">
-              <span>Alpha score</span>
-              <strong>82/100</strong>
-            </div>
-            <div class="meter">
-              <span style="width: 82%"></span>
-            </div>
-            <div class="card-row muted">
-              <span>Risk profile</span>
-              <strong>Moderate</strong>
-            </div>
-            <div class="card-row muted">
-              <span>Best performing asset</span>
-              <strong>BTC</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="about" class="footer">
-      <div class="container footer-inner">
-        <div class="brand small">
-          <span class="brand-mark">C</span>
-          <span>Coincrest</span>
-        </div>
-        <p>Designed for sharper decision-making.</p>
-        <span id="current-year"></span>
-      </div>
-    </footer>
-
-    <script src="app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
